@@ -70,14 +70,21 @@ class EthJsonRpc(object):
     @author chenghuazheng
     @pragma enode
     '''
-    def admin_remove_peer(self, enode=''):
-        '''
+
+    def admin_add_peer(self, enodes=[]):
+        """
         Not Tested
-        '''
+        """
+        return self._call(method='admin_addPeer', params=[enodes], _id=64)
+
+    def admin_remove_peer(self, enode=''):
+        """
+        Tested
+        """
         return self._call(method='admin_removePeer', params=[enode], _id=65)
 
     def admin_peers(self):
-        '''
-        Not Tested
-        '''
+        """
+        Tested
+        """
         return self._call(method='admin_peers', params=[], _id=66)

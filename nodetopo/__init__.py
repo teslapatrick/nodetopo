@@ -3,3 +3,5 @@
 __author__ = """cheng hua zheng"""
 __email__ = 'teslapatrick@gmail.com'
 __version__ = '0.1.0'
+
+from .nodetopo import NodeClient
