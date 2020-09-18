@@ -1,7 +1,7 @@
 # nodetopo
 
 ### init
-virtual -p python3 venv
-source /venv/bin/activate
-pip3 install -r requirements.txt
+1. virtual -p python3 venv
+2. source /venv/bin/activate
+3. pip3 install -r requirements.txt
 
